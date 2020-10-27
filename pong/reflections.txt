@@ -1,0 +1,48 @@
+Game Play discription:
+    There is a board with equal sides
+    Paddles are placed on each side
+    A ball is bounced back and forth
+        The ball bounces off the top and bottom
+        The ball bounces off the paddles at different angles depending
+            on where it hits the paddles
+        The ball increases speed when colliding with a paddles
+    A point is gained when the ball exits the side oppiste a player
+    The game ends when a player reaches 11 points
+
+Begining Conditions:
+    Ball randomly moves in one direction at a random angle
+    Ball moves at base speed
+    Paddles are located in the center of each side
+    Players points are both set to zero
+
+Ending Conditions:
+    A player reaches 11 points
+    PlayerA/B Wins message displays
+
+Ifs needed
+    If a paddle leaves the board it must be placed at the top or bottom
+        depending on where it attempts to exit
+    If the ball hits a top or bottom it bounces
+    If the ball hits a paddle top it bounces at an angle upward
+    If the ball hits a paddle bottom it bounce at an angle downward
+    If the ball hits the center of a paddle it bounces in a stright line
+    If the ball hits a pannel the ball speed increases
+    If the ball passes a player paddle the opisite player recieves 1 point
+    If the ball is off the board it is set in the center at minimum speed
+    If player presses their key the paddle move up or down
+    If a player releases their key the paddle stops
+
+Visual Game Components:
+    1 board (static)
+    2 paddles (animated) (topY, bottomY, middleY speedY)
+    1 ball  (animated)   (positionX, positionY,speedX, and speedY)
+    1 Scoreboard (animated) (PlayerOnePoints, PlayerTwoPoints)
+
+Events:
+    player 1 keys pressed paddle moves up or down depending on key
+    player 2 keys pressed paddle moves up or down depending on key
+    Any player key released paddle stops
+    A player gains a point ball resets to starting position
+    Player reaches 11 points then game ends and displays message
+    
+    
