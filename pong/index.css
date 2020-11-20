@@ -3,6 +3,13 @@ body {
   background-color: darkgreen;
 }
 
+#score {
+  background-color: white;
+  position: absolute;
+  left: 50px;
+  top: 900px;
+}
+
 #board {
   width: 800px;
   height: 440px;
